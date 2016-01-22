@@ -1,1 +1,8 @@
+.jumbotron {
+  text-align: center;
+  background-color: teal;
+}
 
+#result {
+  display: none;
+}

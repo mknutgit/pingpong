@@ -3,7 +3,12 @@
 var count = function(number) {
   var item = [];
   for (var i = 1; i <= number; i++) {
-        item.push(i);
+    if (i % 3 === 0) {
+      item.push('ping');
+    }
+    else {
+      item.push(i);
+    }
   }
 return item;
 };
