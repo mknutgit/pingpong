@@ -1,7 +1,12 @@
 
 .jumbotron {
-  text-align: center;
-  background-color: teal;
+  position: relative;
+    background: #000 url("../img/pp1.jpeg") center;
+    width: 23%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
 }
 
 #play {
@@ -9,12 +14,24 @@
 }
 
 #about {
-  background-color: blue;
+  background-color: #01DF3A;
 }
 
 #result {
   display: none;
+}​
+
+#center {
+  width:10%;
+  border:1px solid red;
+  padding:1em;
+  margin:0   auto;
 }
+
 body {
   background-color: #eee5ff;
+}
+
+.col {
+  outline-color: red;
 }

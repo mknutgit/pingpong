@@ -1,4 +1,7 @@
 describe('count', function () {
+  it("Will return an array for output beginning at one and going up to the number input", function() {
+    expect(count(2)).to.eql([1,2]);
+  });
   it("Will return and array of numbers and specific words (ex. ping, or pong) with the total of the elements in the array equalling the number provided by the user", function() {
     expect(count(6)).to.eql([1,2,"ping",4,"pong","ping"]);
   });

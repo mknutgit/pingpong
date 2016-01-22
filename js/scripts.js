@@ -29,9 +29,8 @@ $(document).ready(function(event) {
       result.forEach(function(entry) {
               $(".result").append("<li>" + entry + "</li>");
             });
-  $("#result").show();
-  var form = document.getElementById("pingpong");
-  form.reset();
+
+  $("#result").show();  
   event.preventDefault();
 
 });

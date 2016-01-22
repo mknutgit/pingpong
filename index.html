@@ -10,53 +10,46 @@
   </head>
   <body>
 
-    <div class="container">
-      <div class="jumbotron">
+    <div class="jumbotron container-fluid">
+      <div class="container">
         <div>
           <h1>Ping & Pong</h1>
         </div>
       </div>
     </div>
 
-  <div class="container">
-    <div class="row">
-      <div id="play" class="col-sm-9">
-        <form id="pingpong" class="form-inline">
-          <div class="form-group">
-            <h1>Step on up and play!</h1>
-            <h2>Rules:</h2>
-              <ol>
-                <li>Numbers divisable by 3 become 'ping'</li>
-                <li>Numbers divisable by 5 become 'pong'</li>
-                <li>Numbers divisable by 15 become 'pingpong'</li>
-              </ol>
-              <H3>How to play:</h3>
-                <p>Enter a number and select 'see the result'.  Selcect the 'play again' button to play as many times as you would like.</p>
+    <div class="container">
+      <div class="row">
+        <div id="play" class="col-sm-12">
+          <form id="pingpong" class="form-inline">
+            <div class="form-group">
+              <h1>Step on up and play!</h1>
+              <h2>Rules:</h2>
+                <ol>
+                  <li>Numbers divisable by 3 become 'ping'</li>
+                  <li>Numbers divisable by 5 become 'pong'</li>
+                  <li>Numbers divisable by 15 become 'pingpong'</li>
+                </ol>
+                <H3>How to play:</h3>
+                  <p>Enter a number and select 'see the result'.  Selcect the 'play again' button to play as many times as you would like.</p>
 
                 <label for="number">Enter your number here:</label>
                 <input id="number" type="text">
                 <button type="submit" class="btn-primary">See the result!</button>
                 <button type="reset" class="btn btn-success" onClick="window.location.reload()">Play again!</button>
+              </div>
+            </form>
           </div>
-        </form>
       </div>
-
-        <div id="about" class="col-sm-3">
-          <h3>All About Ping Pong:</h3>
+<!-- //shown after submit/// -->
+      <div class="row" id="result">
+        <div class=col-sm-6>
+          <img src="img/pp2.jpeg">
         </div>
-      </div>
-
-      <div class="row">
-        <div id="will" class="col-sm-4">
-          <img class="img-responsive" src="img/pp1.jpeg">
-        </div>
-        <div id="result" class="col-sm-4">
+        <div class=col-sm-6 id=center>
           <p>
             <ul class="result"></ul>
           </p>
-        </div>
-        <div id="" class="col-sm-4 col-sm-offset-4">
-          <img class="img-responsive" src="img/pp1.jpeg">
         </div>
       </div>
     </div>
