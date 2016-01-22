@@ -6,7 +6,7 @@ var count = function(number) {
     if (i % 15 === 0) {
       item.push('pingpong');
     }
-    if (i % 5 === 0) {
+    else if (i % 5 === 0) {
       item.push('pong');
     }
     else if (i % 3 === 0) {
@@ -26,8 +26,9 @@ $(document).ready(function(event) {
 
       var number = $("input#number").val();
       var result = count(number);
-
-  
+      result.forEach(function(entry) {
+              $(".result").append("<li>" + entry + "</li>");
+            });
   $("#result").show();
   var form = document.getElementById("pingpong");
   form.reset();
