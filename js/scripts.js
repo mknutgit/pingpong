@@ -3,6 +3,9 @@
 var count = function(number) {
   var item = [];
   for (var i = 1; i <= number; i++) {
+    if (i % 15 === 0) {
+      item.push('pingpong');
+    }
     if (i % 5 === 0) {
       item.push('pong');
     }
@@ -24,8 +27,10 @@ $(document).ready(function(event) {
       var number = $("input#number").val();
       var result = count(number);
 
-  $(".result").text(result);
+  
   $("#result").show();
+  var form = document.getElementById("pingpong");
+  form.reset();
   event.preventDefault();
 
 });
