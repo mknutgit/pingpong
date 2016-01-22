@@ -1,8 +1,20 @@
+
 .jumbotron {
   text-align: center;
   background-color: teal;
 }
 
+#play {
+  background-color: #ffffb3;
+}
+
+#about {
+  background-color: blue;
+}
+
 #result {
   display: none;
+}
+body {
+  background-color: #eee5ff;
 }

@@ -11,7 +11,7 @@ describe('count', function () {
     expect(count(5)).to.eql([1,2,"ping",4,"pong"]);
   });
 
-  it("is true for years divisible by 400", function() {
-   expect(leapYear(2000)).to.equal(true);
+  it("For any numbers divisable by 15 in the array they will show as 'pingpong' rather than the number", function() {
+    expect(count(5)).to.eql([1,2,"ping",4,"pong"]);
   });
 });
