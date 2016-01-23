@@ -17,9 +17,7 @@
   background-color: #01DF3A;
 }
 
-#result {
-  display: none;
-}​
+
 
 #center {
   width:10%;
@@ -30,8 +28,4 @@
 
 body {
   background-color: #eee5ff;
-}
-
-.col {
-  outline-color: red;
 }
